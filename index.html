@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>PortfolioMatiasLUcero</title>
+    <title>PortfolioMatiasLucero</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,15 +17,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>JAVASCRIPT</span>
+                        <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>JAVA</span>
+                        <span>Java</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>50%</span>
@@ -170,8 +170,253 @@
                         </div>
                     </div>
                 </div>
+                <!-- Profesional Skills -->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ProActividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Colaboración</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
             </div>
         </div>
     </section>
+    <!-- Seccion curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <!-- Educacion -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izquierda">
+                        <h4>Programación Front-End</h4>
+                        <span class="casa">Oracle - Alura latam</span>
+                        <span class="fecha">Agosto 2024 -  Enero 2025</span>
+                        <p>Curso enfocado en Front-End (HTML, CSS , Javascript y React) </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izquierda">
+                        <h4>Programación web FullStack</h4>
+                        <span class="casa">Codo a Codo - Agencias de habilidades para el futuro - Buenos Aires ciudad</span>
+                        <span class="fecha">Marzo a Julio 2024</span>
+                        <p>Curso enfocado en Java- </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izquierda">
+                        <h4>Diplomatura programación web FullStack</h4>
+                        <span class="casa">Universidad Tecnológica Nacional-UTN</span>
+                        <span class="fecha">Marzo a Diciembre 2023</span>
+                        <p>Curso enfocado en el Stack MERN (Moongose, Express, React, Node)- </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izquierda">
+                        <h4>Inglés - B2+</h4>
+                        <span class="casa">Summit - English courses</span>
+                        <span class="fecha">Agosto 2022 - Diciembre 2022</span>
+                        <p>Curso de Inglés - Gramática y conversación </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izquierda">
+                        <h4>Inglés - B1.2</h4>
+                        <span class="casa">Instituto online de lenguas extranjeras E-language Centre</span>
+                        <span class="fecha">Agosto 2021 - Diciembre 2021</span>
+                        <p>Curso de Inglés </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izquierda">
+                        <h4>Técnico Químico Industrial</h4>
+                        <span class="casa">Escuela Fray Luis Beltrán</span>
+                        <span class="fecha">Febrero 1998 - Noviembre 2003</span>
+                        <p>Escuela Secundaria </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experiencia Laboral -->
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item derecha">
+                        <h4>Analista laboratorio Químico</h4>
+                        <span class="casa">Holcim Argentina</span>
+                        <span class="fecha">Octubre 2008 - Actualidad</span>
+                        <p>Analisis quimicos del proceso de producción de cemento </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item derecha">
+                        <h4>Repositor</h4>
+                        <span class="casa">Supermercados Vea</span>
+                        <span class="fecha">Marzo a Julio 2024</span>
+                        <p>Repositor de salón</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./assets/Encriptador (1).png" alt="Imagen encriptador de texto">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Proyecto desarrollado en cursado de Oracle-AluraLatam</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/Encriptador (1).png" alt="Imagen encriptador de texto">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Proyecto desarrollado en cursado de Oracle-AluraLatam</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/Encriptador (1).png" alt="Imagen encriptador de texto">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Proyecto desarrollado en cursado de Oracle-AluraLatam</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/Encriptador (1).png" alt="Imagen encriptador de texto">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Proyecto desarrollado en cursado de Oracle-AluraLatam</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/Encriptador (1).png" alt="Imagen encriptador de texto">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Proyecto desarrollado en cursado de Oracle-AluraLatam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col"> 
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./assets/Ubicacion.png" alt="Foto de mi ubicacion">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                25 de Mayo 2798 Piso 12 Dpto 4, Ciudad Mendoza.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Llamanos: 0261-6741000
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: matiaslucero21884@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seecion Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
