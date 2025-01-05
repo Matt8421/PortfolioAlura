@@ -374,7 +374,7 @@ html{
     0%{width: 0%;}
     100%{width: 96%;}
 }
-/* Seccion Curriculum */
+/* Seccion Curriculum ---------------------------------------------------------------------------------------------------*/
 .curriculum{
     background-color: #1e2326;
     color: #fff;
@@ -448,12 +448,12 @@ html{
     line-height: 24px;
 }
 
-.curriculum .fila .izquierda{
+.curriculum .fila .izq{
     border-right: 2px solid #1cb698;
     margin-right: 20px;
 }
 
-.curriculum .fila .derecha{
+.curriculum .fila .der{
     border-left: 2px solid #1cb698;
     margin-left: 20px;
 }
@@ -495,13 +495,13 @@ html{
     width: 10px;
     border-radius: 50%;
     background-color: #1cb698;
-    float: right;
+    float: left;
     position: relative;
     bottom: 4px;
 
 }
 
-/* Seccion Portfolio */
+/* Seccion Portfolio ----------------------------------------------------------------------------------------------*/
 
 .portfolio{
     background-color: #252a2e;
@@ -591,12 +591,15 @@ html{
 
 .contacto .fila{
     display: flex;
+    
+
 }
 
 .contacto .col{
     width: 50%;
     padding: 10px;
     position: relative;
+    
 }
 
 .contacto .col input, .contacto .col textarea{
@@ -639,9 +642,12 @@ html{
     width: 100%;
 }
 
-.contacto .col img{
+.contacto .col img {  /* Agrege clase mapa  */
     width: 100%;
+    
+    
 }
+
 
 .contacto .col .info{
     position: absolute;
@@ -665,4 +671,119 @@ html{
     color: #1cb698;
     display: inline-block;
     margin-right: 20px;
+}
+
+/*  */
+footer{
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1cb698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* Seccion Responsive */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
 }
